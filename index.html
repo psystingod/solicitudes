@@ -5,10 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Solicitud de servicio de internet</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    
 </head>
 <body>
-    <div class="container-fluid">
-        
+    <div class="container">
+        <header>
+            <img class="center-block img-responsive" src="images/logo.png" alt="" width="100px" height="80px">
+            <h3 class="text-center">SOLICITUD DE SERVICIO DE INTERNET</h3>
+            <hr>
+        </header>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Datos del cliente</div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 col-xs-4">
+                            <label for="velocidad">VELOCIDAD</label>
+                            <input type="text" class="form-control" name="velocidad" placeholder="Velocidad">
+                        </div>
+                        <div class="form-group col-md-4 col-xs-4">
+                            <label for="servicio">SERVICIO</label>
+                            <input type="text" class="form-control" name="servicio" placeholder="Servicio">
+                        </div>
+                        <div class="form-group col-md-4 col-xs-4">
+                            <label for="fecha">FECHA</label>
+                            <input type="text" class="form-control" name="fecha" placeholder="Fecha">
+                        </div>
+                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="periodo">PERIODO DE CONTRATO</label>
+                                <input type="text" class="form-control" name="periodo" placeholder="Período de contrato">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="tecnologia">TECNOLOGIA</label>
+                                <input type="text" class="form-control" name="tecnologia" placeholder="Tecnología">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="codigo">CODIGO</label>
+                                <input type="text" class="form-control" name="codigo" placeholder="Código">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="nombre">NOMBRE</label>
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="direccion">DIRECCION</label>
+                                <input type="text" class="form-control" name="direccion" placeholder="Dirección">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="telefono">TELEFONO</label>
+                                <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="whatsapp">WHATSAPP</label>
+                                <input type="text" class="form-control" name="whatsapp" placeholder="Whatsapp">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="facebook">FACEBOOK</label>
+                                <input type="text" class="form-control" name="facebook" placeholder="Facebook">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="ocupacion">OCUPACION</label>
+                                <input type="text" class="form-control" name="ocupacion" placeholder="Ocupación">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="direccionDeTrabajo">DIRECCION DE TRABAJO</label>
+                                <input type="text" class="form-control" name="direccionDeTrabajo" placeholder="direccion de trabajo">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="estadoCivil">ESTADO CIVIL</label>
+                                <input type="text" class="form-control" name="estadoCivil" placeholder="Estado civil">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="nombreDelConyugue">NOMBRE DEL CONYUGUE</label>
+                                <input type="text" class="form-control" name="nombreDelConyugue" placeholder="Nombre del cónyugue">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="telConyugue">TEL. CONYUGUE</label>
+                                <input type="text" class="form-control" name="telConyugue" placeholder="Teléfono del cónyugue">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="ocupacionConyugue">OCUPACION DEL CONYUGUE</label>
+                                <input type="text" class="form-control" name="ocupacionConyugue" placeholder="Ocupación del cónyugue">
+                            </div>
+                        </div>
+                        <h4>CONTACTO ADICIONAL #1</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="nombre1">NOMBRE</label>
+                                <input type="text" class="form-control" name="nombre1" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="telefono1">TELEFONO</label>
+                                <input type="text" class="form-control" name="telefono1" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="direccion1">DIRECCION</label>
+                                <input type="text" class="form-control" name="direccion1" placeholder="Dirección">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="parentesco1">PARENTESCO</label>
+                                <input type="text" class="form-control" name="parentesco1" placeholder="Parentesco">
+                            </div>
+                        </div>
+                        <h4>CONTACTO ADICIONAL #2</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="nombre2">NOMBRE</label>
+                                <input type="text" class="form-control" name="nombre2" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="telefono2">TELEFONO</label>
+                                <input type="text" class="form-control" name="telefono2" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="direccion2">DIRECCION</label>
+                                <input type="text" class="form-control" name="direccion2" placeholder="Dirección">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="parentesco2">PARENTESCO</label>
+                                <input type="text" class="form-control" name="parentesco2" placeholder="Parentesco">
+                            </div>
+                        </div>
+                        <h4>CONTACTO ADICIONAL #3</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="nombre3">NOMBRE</label>
+                                <input type="text" class="form-control" name="nombre3" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label for="telefono3">TELEFONO</label>
+                                <input type="text" class="form-control" name="telefono3" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="direccion3">DIRECCION</label>
+                                <input type="text" class="form-control" name="direccion3" placeholder="Dirección">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="parentesco3">PARENTESCO</label>
+                                <input type="text" class="form-control" name="parentesco3" placeholder="Parentesco">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <button type="submit" class="btn btn-primary btn-block">Enviar solicitud</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>      
+    </div>
     </div>
 </body>
 </html>
