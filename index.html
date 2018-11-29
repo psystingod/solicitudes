@@ -25,17 +25,33 @@
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-12 col-xs-12">
-                            <label class="alert alert-info" for="idSolicitud">N° 1048</label>
+                            <label class="alert alert-info" for="idSolicitud" role="alert">N° 1048</label>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-4 col-xs-4">
                             <label for="velocidad">VELOCIDAD</label>
-                            <input type="text" class="form-control" name="velocidad" placeholder="Velocidad">
+                            <select class="form-control" name="velocidad" id="velocidad">
+                                <option value="" selected disabled>Seleccionar...</option>
+                                <option value="2mg">2MG</option>
+                                <option value="3mg">3MG</option>
+                                <option value="4mg">4MG</option>
+                                <option value="5mg">5MG</option>
+                                <option value="6mg">6MG</option>
+                                <option value="7mg">7MG</option>
+                                <option value="8mg">8MG</option>
+                                <option value="9mg">9MG</option>
+                                <option value="10mg">10MG</option>
+                            </select>
                         </div>
                         <div class="form-group col-md-4 col-xs-4">
                             <label for="servicio">SERVICIO</label>
-                            <input type="text" class="form-control" name="servicio" placeholder="Servicio">
+                            <select class="form-control" name="servicio" id="servicio">
+                                <option value="" selected disabled>Seleccionar...</option>
+                                <option value="cable">Cable</option>
+                                <option value="internet">Internet</option>
+                                <option value="cableEinternet">Cable + internet</option>
+                            </select>
                         </div>
                         <div class="form-group col-md-4 col-xs-4">
                             <label for="fecha">FECHA</label>
