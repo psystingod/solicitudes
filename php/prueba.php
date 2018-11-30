@@ -13,9 +13,9 @@ function Header()
     // Movernos a la derecha
     $this->Cell(80);
     // Título
-    $this->Cell(30,10,'Solicitud de servicio de internet',1,0,'C');
+    $this->Cell(30,10,'Solicitud de Servicio de Internet',0,0,'C');
     // Salto de línea
-    $this->Ln(20);
+    $this->Ln(40);
 }
 
 // Pie de página
