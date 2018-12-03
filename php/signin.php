@@ -40,7 +40,10 @@
                     $_SESSION['rol'] = $loginRow['rol'];
 
                     $this->dbConnect = NULL;
-                    header("Location: ../index.html");
+                    header("Location: ../solicitudes.php");
+                }
+                else {
+                    header("Location: ../login.php");
                 }
 
         }
