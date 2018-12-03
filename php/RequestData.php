@@ -16,9 +16,11 @@
                 /**
                  * Datos del cliente
                  */
+                $date=date_create($_POST['fecha']);
+
                 $velocidad = $_POST['velocidad'];
                 $servicio = $_POST['servicio'];
-                $fecha = $_POST['fecha'];
+                $fecha = date_format($date,"Y-m-d");
                 $periodo_de_contrato = $_POST['periodo_de_contrato'];
                 $tecnologia = $_POST['tecnologia'];
                 $codigo = $_POST['codigo'];
@@ -61,7 +63,7 @@
                 $dependencia = $_POST['dependencia'];
 
                 // SQL query para datos de la solicitud
-                $query = "INSERT INTO solicitud(fecha, servicio, velocidad, periodo, tecnologia)
+                $query = "INSERT INTO Solicitudes(fecha, servicio, velocidad, periodo, tecnologia)
                           VALUES(:fecha, :servicio, :velocidad, :periodo, :tecnologia)";
                 // Prepare statement
                 $statement = $this->dbConnect->prepare($query);
@@ -74,8 +76,8 @@
                 ));
 
                 // SQL query para datos del cliente
-                $query = "INSERT INTO cliente(codigo, nombre, direccion, telefono, whatsapp, facebook, ocupacion, direccion_de_trabajo, estado_civil, nombre_conyugue, telefono_conyugue, ocupacion_conyugue)
-                          VALUES(:codigo, :nombre, :direccion, :telefono, :whatsapp, :facebook, :ocupacion, :direccion_de_trabajo, estado_civil, nombre_conyugue, telefono_conyugue, ocupacion_conyugue)";
+                $query = "INSERT INTO Clientes(codigo, nombre, direccion, telefono, whatsapp, facebook, ocupacion, direccion_de_trabajo, estado_civil, nombre_conyugue, telefono_conyugue, ocupacion_conyugue, Solicitudes_id_solicitud)
+                          VALUES(:codigo, :nombre, :direccion, :telefono, :whatsapp, :facebook, :ocupacion, :direccion_de_trabajo, :estado_civil, :nombre_conyugue, :telefono_conyugue, :ocupacion_conyugue, (SELECT id_solicitud FROM Solicitudes WHERE id_solicitud = LAST_INSERT_ID()))";
                 // Prepare statement
                 $statement = $this->dbConnect->prepare($query);
                 $statement->execute(array(
@@ -94,8 +96,8 @@
                 ));
 
                 // SQL query para los contactos
-                $query = "INSERT INTO contactos(nombre1, telefono1, direccion1, parentesco1, nombre2, telefono2, direccion2, parentesco2, nombre3, telefono3, direccion3, parentesco3)
-                          VALUES(:nombre1, :telefono1, :direccion1, :parentesco1, :nombre2, :telefono2, :direccion2, :parentesco2, :nombre3, :telefono3, :direccion3, :parentesco3,)";
+                $query = "INSERT INTO Contactos(nombre1, telefono1, direccion1, parentesco1, nombre2, telefono2, direccion2, parentesco2, nombre3, telefono3, direccion3, parentesco3, Clientes_id_cliente)
+                          VALUES(:nombre1, :telefono1, :direccion1, :parentesco1, :nombre2, :telefono2, :direccion2, :parentesco2, :nombre3, :telefono3, :direccion3, :parentesco3, (SELECT id_cliente FROM Clientes WHERE id_cliente = LAST_INSERT_ID()))";
                 // Prepare statement
                 $statement = $this->dbConnect->prepare($query);
                 $statement->execute(array(
@@ -114,13 +116,13 @@
                 ));
 
                 // SQL query para datos del vendedor
-                $query = "INSERT INTO vendedor(vendedor, dependencia)
-                          VALUES(:vendedor, :dependencia)";
+                $query = "INSERT INTO Vendedores(vendedor, dependencia, Contactos_id_contacto)
+                          VALUES(:vendedor, :dependencia, (SELECT id_contacto FROM Contactos WHERE id_contacto = LAST_INSERT_ID()))";
                 // Prepare statement
                 $statement = $this->dbConnect->prepare($query);
                 $statement->execute(array(
-                    ':vendedor' => $this->vendedor,
-                    ':dependencia' => $this->dependencia
+                    ':vendedor' => $vendedor,
+                    ':dependencia' => $dependencia
                 ));
 
                 $this->dbConnect = NULL;

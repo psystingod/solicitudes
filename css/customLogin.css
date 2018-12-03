@@ -1,0 +1,22 @@
+body{
+    background-color:   #b71c1c;
+}
+
+.container{
+    font-family: 'Roboto', sans-serif;
+}
+.login{
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    /*border: 12px solid rgba(33,33,33);
+    border-radius: 3px;*/
+    background-color: #cfd8dc;
+    box-shadow: 0px 7px 0px 0px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+.login h4{
+    font-weight: bold;
+}
