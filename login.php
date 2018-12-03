@@ -12,9 +12,9 @@
         <div class="container">
             <div class="row-fluid">
                 <div class="login">
-                    <h4 class="text-center">INICIAR SESION</h4>
+                    <h4 class="text-center">CABLESAT</h4>
                     <br>
-                    <form class="" action="sign-in.php" method="post">
+                    <form class="" action="php/signin.php" method="post">
                         <div class="form-row">
                             <div class="form-group col-md-12 col-xs-12">
                                 <input type="text" class="form-control" name="user" placeholder="USUARIO">
@@ -27,7 +27,7 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12 col-xs-12">
-                                <input type="submit" class="btn btn-danger btn-block" value="LOGIN">
+                                <input type="submit" class="btn btn-danger btn-block" value="INICIAR SESION">
                             </div>
                         </div>
                     </form>
