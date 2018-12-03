@@ -11,7 +11,6 @@
         }
         public function sendRequest()
         {
-
                 /**
                  * Datos del cliente
                  */
