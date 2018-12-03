@@ -1,4 +1,4 @@
-.row{
+.bor{
     border-bottom: 1px solid #E0E0E0;
 }
 .request{
@@ -8,7 +8,7 @@
     border-right: 1px solid #E0E0E0;
     padding: 20px;
 }
-.request i.green{
+.request i.purple{
     font-size: 42px;
     color: #6A1B9A;
 }
@@ -20,7 +20,10 @@
     font-size: 42px;
     color: #B71C1C;
 }
-.request i.grey{
+.request i.green{
     font-size: 42px;
     color: #2e7d32;
+}
+.bor-no{
+    border-right: 0px;
 }

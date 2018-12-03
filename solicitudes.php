@@ -70,10 +70,10 @@
         </nav>
         <!-- Comienza el cuerpo del dashboard-->
         <div class="container-fluid">
-            <div class="row">
+            <div class="row bor">
                 <div class="col-md-3 col-xs-3">
                     <div class="request">
-                        <i class="far fa-file-alt green"></i> 20
+                        <i class="far fa-file-alt purple"></i> 20
                         <br>
                         Nuevas solicitudes
                     </div>
@@ -93,12 +93,14 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-3">
-                    <div class="request">
-                        <i class="fas fa-cogs grey"></i> 5
+                    <div class="request bor-no">
+                        <i class="fas fa-cogs green"></i> 5
                         <br>
                         En proceso
                     </div>
                 </div>
+            </div>
+            <div class="row">
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
