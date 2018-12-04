@@ -9,7 +9,7 @@
         {
             parent::__construct ();
         }
-        public function sessionStart()
+        public function startSession()
         {
                 /**
                  * Datos del usuario
@@ -43,6 +43,7 @@
                     header("Location: ../solicitudes.php");
                 }
                 else {
+                    $this->dbConnect = NULL;
                     header("Location: ../login.php");
                 }
 
@@ -50,5 +51,5 @@
     }
 
     $login = new Login();
-    $login->sessionStart();
+    $login->startSession();
 ?>

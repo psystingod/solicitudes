@@ -17,12 +17,12 @@
                     <form class="" action="php/signin.php" method="post">
                         <div class="form-row">
                             <div class="form-group col-md-12 col-xs-12">
-                                <input type="text" class="form-control" name="user" placeholder="USUARIO">
+                                <input type="text" class="form-control" name="user" placeholder="USUARIO" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12 col-xs-12">
-                                <input type="password" class="form-control" name="pass" placeholder="CONTRASEÑA">
+                                <input type="password" class="form-control" name="pass" placeholder="CONTRASEÑA" required>
                             </div>
                         </div>
                         <div class="form-row">

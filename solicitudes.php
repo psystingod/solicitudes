@@ -16,7 +16,7 @@
         <?php
              // session_start();
              if(!isset($_SESSION["user"])) {
-             header('Location: login.php');
+                 header('Location: login.php');
              }
          ?>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -75,28 +75,28 @@
                     <div class="request">
                         <i class="far fa-file-alt purple"></i> 20
                         <br>
-                        Nuevas solicitudes
+                        <a href="#">Nuevas solicitudes</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-3">
                     <div class="request">
                         <i class="fas fa-users blue"></i> 15
                         <br>
-                        Nuevos clientes
+                        <a href="#">Nuevos clientes</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-3">
                     <div class="request">
                         <i class="fas fa-user-tie red"></i> 8
                         <br>
-                        Vendedores
+                        <a href="#">Vendedores</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-3">
                     <div class="request bor-no">
                         <i class="fas fa-cogs green"></i> 5
                         <br>
-                        En proceso
+                        <a href="#">En proceso</a>
                     </div>
                 </div>
             </div>
