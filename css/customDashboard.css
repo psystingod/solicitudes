@@ -33,6 +33,8 @@
     color: #424242;
 }
 .request a:hover{
-    text-decoration: none;
-    font-size: 19px;
+    border-bottom: 3px solid #b33939;
+}
+.row img{
+    margin: 0 auto;
 }

@@ -39,10 +39,10 @@
                         Ver
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Nuevas solicitudes</a>
+                        <a class="dropdown-item" href="#">Solicitudes en proceso</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Instalaciones completadas</a>
                       </div>
                     </li>
                     <li class="nav-item">
@@ -101,6 +101,7 @@
                 </div>
             </div>
             <div class="row">
+                <img class="center-block img-responsive" src="images/nlogo.png" alt="Logo de clabesat" width="520px" height="480px">
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
