@@ -1,5 +1,8 @@
 <?php
-    session_start()
+    session_start();
+    require('php/GetRequestCount.php');
+    $rq = new GetRequestCount();
+    $requestCountData = $rq->getRequestCountData();
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -73,7 +76,7 @@
             <div class="row bor">
                 <div class="col-md-3 col-xs-3">
                     <div class="request">
-                        <i class="far fa-file-alt purple"></i> 20
+                        <i class="far fa-file-alt purple"></i> <?php echo $requestCountData; ?>
                         <br>
                         <a href="#">Nuevas solicitudes</a>
                     </div>
