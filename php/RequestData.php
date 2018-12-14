@@ -123,7 +123,7 @@
                     ':dependencia' => $dependencia
                 ));
 
-                $this->dbConnect = NULL;
+                $this->dbConnect = NULL; this.config
                 header("Location: ../index.html");
 
         }
